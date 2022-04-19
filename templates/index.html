@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Pave your way to good study">
+    <meta name="keywords" content="Abroad study">
+    <meta name="author" content="PAVE HQ">
+    <title>INSURA | Recommender</title>
+   
+</head>
+<body>
+    <header>
+        <div class="container" >
+            <div id="branding">
+                <h1 style="text-align: center;">WELCOME TO PAVE HQ</h1>
+                <style>h1{
+                    color: blue;
+                    font-size: 100px;
+                }</style>
+                <h2 style="text-align: center;">Let's help you find a good course match.... </h2>
+                <style>h2{
+                    color: rgba(11, 11, 201, 0.596);
+                    font-size: 50px;
+                }</style>
+                <h3>Emmanuel is awesome by the way; he is a god...</h3>
+                <style>h3{
+                    color: rgba(7, 7, 88, 0.596);
+                    font-size: 25px;
+                }</style>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div  class="content">
+        <style>div{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            }
+            </style>
+        <form action="./predict" method="POST">
+            <input type="text" name="course" placeholder="Choice of Course" maxlength="100" size="40">
+                                                 
+            <br><br><br>
+            <input type="submit" Recommend>
+        </form>
+        <br>
+        <br>
+        {{prediction_text}}
+    </div>
+ 
+
+</body>
+</html>
